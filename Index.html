@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap Introduction</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-warning text-danger text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <title>Bootstrap Example</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <body>
+        
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img 
+              src="images/1.jpg" alt="Abstract" class="d-block" style="width:100%" height="400px">
+            </div>
+            <div class="carousel-item">
+              <img 
+              src="images/1.jpg" alt="Abstract" class="d-block" style="width:100%" height="400px">
+            </div>
+            <div class="carousel-item">
+              <img 
+              src="images/1.jpg" alt="Abstract" class="d-block" style="width:100%" height="400px"> 
+            </div>
+          </div>
+          
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <!-- end of carousel -->
+
+      </div> 
+      <div class="container-fluid mt-3 bg-light">
+        <div class="row">
+          <div class="col-sm-3">
+            <h3>Web Development</h3>
+            <p>Web development refers to the process of creating, designing, and maintaining websites. It involves various aspects such as coding, graphic design, user experience (UX) design, and search engine optimization (SEO). Web developers use different programming languages, frameworks, and tools to build functional, visually appealing, and responsive websites that can be accessed through various devices like desktops, laptops, tablets, and smartphones. Their main goal is to ensure users have a smooth and enjoyable experience while navigating and interacting with websites.</p>
+          </div>
+          <div class="col-sm-3">
+            <h3>Graphic Design</h3>
+            <p>Graphic Design refers to the art and practice of creating visual content to communicate ideas, convey messages, or promote products and services. It involves the use of various design principles, elements, and techniques to create visually appealing and effective visual compositions. Graphic designers work with a wide range of media, including print, digital, and multimedia platforms, to produce designs for logos, websites, advertisements, magazines, packaging, and more. Their goal is to communicate a clear and engaging message to the target audience while adhering to the client's brand identity and guidelines.</p>
+          </div>
+          <div class="col-sm-3">
+            <h3>Video Editing</h3>        
+            <p>Video editing is the process of selecting and manipulating video footage, audio recordings, and other visual elements to create a polished and engaging final product. This involves cutting and splicing clips, adjusting color and lighting, adding special effects, and synchronizing audio with the visuals. Video editing software, such as Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve, are commonly used for this purpose. Proficient video editors possess strong attention to detail, creativity, and technical skills to bring together various elements into a cohesive and visually appealing narrative.</p>
+          </div>
+          <div class="col-sm-3">
+            <h3>3D Animation</h3>        
+            <p>A 3D animation description refers to a visual representation of a scene, character, or object created using computer-generated imagery (CGI) in a three-dimensional space. This process involves the use of specialized software to design, model, texture, light, animate, and render the elements in a virtual environment. The final output is a dynamic, lifelike, and engaging sequence or presentation that can be viewed on various devices, including televisions, computers, and movie screens.
+                In this process, artists and animators work together to create a story or concept, which they then break down into individual elements or assets.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"><div class="container mt-3">
+          <h2>Card Image</h2>
+          <p>Image at the top (card-img-top):</p>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">John Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      John Doe is a professional who holds two distinct roles in the fields of engineering and architecture. As an engineer, he likely applies scientific knowledge and principles to design, develop, and test various structures, systems, and processes. In his role as an architect, he focuses on designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Both professions require creativity, problem-solving skills, and a strong understanding of design principles and construction methods.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <br>
+          
+          <p>Image at the bottom (card-img-bottom):</p>
+          <div class="card" style="width:400px">
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Jane Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Jane Doe is a professional who holds two prestigious positions - an engineer and an architect. Both of these professions require a high level of technical knowledge, creativity, and problem-solving skills. As an engineer, she might be involved in designing, building, and maintaining various structures, systems, or machines. As an architect, she would be responsible for designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Jane's dual expertise in these fields allows her to contribute significantly to various projects and teams, combining her engineering and architectural skills to create innovative solutions.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <img class="card-img-bottom" src="images/img2.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-3"><div class="container mt-3">
+          <h2>Card Image</h2>
+          <p>Image at the top (card-img-top):</p>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <div class="container mt-3">          
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">John Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      John Doe is a professional who holds two distinct roles in the fields of engineering and architecture. As an engineer, he likely applies scientific knowledge and principles to design, develop, and test various structures, systems, and processes. In his role as an architect, he focuses on designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Both professions require creativity, problem-solving skills, and a strong understanding of design principles and construction methods.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <br>
+          
+          <p>Image at the bottom (card-img-bottom):</p>
+          <div class="card" style="width:400px">
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <div class="container mt-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Jane Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Jane Doe is a professional who holds two prestigious positions - an engineer and an architect. Both of these professions require a high level of technical knowledge, creativity, and problem-solving skills. As an engineer, she might be involved in designing, building, and maintaining various structures, systems, or machines. As an architect, she would be responsible for designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Jane's dual expertise in these fields allows her to contribute significantly to various projects and teams, combining her engineering and architectural skills to create innovative solutions.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <img class="card-img-bottom" src="images/img2.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-3"><div class="container mt-3">
+          <h2>Card Image</h2>
+          <p>Image at the top (card-img-top):</p>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <div class="container mt-3">               
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">John Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      John Doe is a professional who holds two distinct roles in the fields of engineering and architecture. As an engineer, he likely applies scientific knowledge and principles to design, develop, and test various structures, systems, and processes. In his role as an architect, he focuses on designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Both professions require creativity, problem-solving skills, and a strong understanding of design principles and construction methods.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <br>
+          
+          <p>Image at the bottom (card-img-bottom):</p>
+          <div class="card" style="width:400px">
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <div class="container mt-3">            
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Jane Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Jane Doe is a professional who holds two prestigious positions - an engineer and an architect. Both of these professions require a high level of technical knowledge, creativity, and problem-solving skills. As an engineer, she might be involved in designing, building, and maintaining various structures, systems, or machines. As an architect, she would be responsible for designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Jane's dual expertise in these fields allows her to contribute significantly to various projects and teams, combining her engineering and architectural skills to create innovative solutions.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <img class="card-img-bottom" src="images/img2.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-3"><div class="container mt-3">
+          <h2>Card Image</h2>
+          <p>Image at the top (card-img-top):</p>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <div class="container mt-3">               
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">John Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      John Doe is a professional who holds two distinct roles in the fields of engineering and architecture. As an engineer, he likely applies scientific knowledge and principles to design, develop, and test various structures, systems, and processes. In his role as an architect, he focuses on designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Both professions require creativity, problem-solving skills, and a strong understanding of design principles and construction methods.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <br>
+          
+          <p>Image at the bottom (card-img-bottom):</p>
+          <div class="card" style="width:400px">
+            <div class="card-body">
+              <h4 class="card-title">Jane Doe</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <div class="container mt-3">                
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                  See Profile
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Jane Doe</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Jane Doe is a professional who holds two prestigious positions - an engineer and an architect. Both of these professions require a high level of technical knowledge, creativity, and problem-solving skills. As an engineer, she might be involved in designing, building, and maintaining various structures, systems, or machines. As an architect, she would be responsible for designing and planning buildings, ensuring they are functional, safe, and aesthetically pleasing. Jane's dual expertise in these fields allows her to contribute significantly to various projects and teams, combining her engineering and architectural skills to create innovative solutions.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <img class="card-img-bottom" src="images/img2.png" alt="Card image" style="width:100%">
+          </div>
+        </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://www.facebook.com/"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="https://twitter.com/"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="https://www.google.com/"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-body" href="#">AndreiEnriquez.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
